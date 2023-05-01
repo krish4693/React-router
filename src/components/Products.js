@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink,Link } from 'react-router-dom'
 import { Outlet } from 'react-router-dom'
 
 export const Product= () => {
@@ -9,8 +9,8 @@ export const Product= () => {
         <input placeholder='search items' type='search '/>
     </div>
     <nav>
-      <Link to='featured'>Featured</Link>
-      <Link to='new'>New</Link>
+      <NavLink to='featured'>Featured</NavLink>
+      <NavLink to='new'>New</NavLink>
     </nav>
     <Outlet/>
     </>
